@@ -1,0 +1,50 @@
+{
+  "name": "@ocopjs/app-version",
+  "description": "OcopJS - Trả về phiên bản hiện tại của ứng dụng.",
+  "version": "0.0.0",
+  "author": "ocopjs",
+  "scripts": {
+    "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
+    "build": "tsup",
+    "semantic-release": "semantic-release",
+    "test": "jest"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://ocopee.com",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ocopjs/app-version.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ocopjs/app-version/issues"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "engines": {
+    "node": "16"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.14.6",
+    "@ocopjs/access-control": "^1.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "semantic-release": "^23.0.2",
+    "ts-jest": "^29.1.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
