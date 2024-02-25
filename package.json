@@ -1,7 +1,7 @@
 {
   "name": "@ocopjs/app-version",
   "description": "OcopJS - Trả về phiên bản hiện tại của ứng dụng.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "ocopjs",
   "scripts": {
     "format": "prettier --write \"**/*.{ts,tsx,md,js}\"",
