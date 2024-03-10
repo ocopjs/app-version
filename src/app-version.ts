@@ -26,34 +26,34 @@ export class AppVersionProvider<SN extends string> {
     this._appName = appName;
   }
 
-  getTypes({ }: { schemaName: SN }) {
+  getTypes({}: { schemaName: SN }) {
     return [] as string[];
   }
   getQueries({ schemaName }: { schemaName: SN }) {
     return this._access[schemaName]
       ? [
-        `"""The version of the Buon application serving this API."""
+          `"""The version of the Buon application serving this API."""
           ${this._appName}Version: String`,
-      ]
+        ]
       : [];
   }
-  getMutations({ }: { schemaName: SN }) {
+  getMutations({}: { schemaName: SN }) {
     return [] as string[];
   }
-  getSubscriptions({ }: { schemaName: SN }) {
+  getSubscriptions({}: { schemaName: SN }) {
     return [] as string[];
   }
 
-  getTypeResolvers({ }: { schemaName: SN }) {
+  getTypeResolvers({}: { schemaName: SN }) {
     return {} as Record<string, any>;
   }
   getQueryResolvers({ schemaName }: { schemaName: SN }) {
     return this._access[schemaName] ? { appVersion: () => this._version } : {};
   }
-  getMutationResolvers({ }: { schemaName: SN }) {
+  getMutationResolvers({}: { schemaName: SN }) {
     return {} as Record<string, any>;
   }
-  getSubscriptionResolvers({ }: { schemaName: SN }) {
+  getSubscriptionResolvers({}: { schemaName: SN }) {
     return {} as Record<string, any>;
   }
 }
