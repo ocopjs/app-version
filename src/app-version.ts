@@ -32,7 +32,7 @@ export class AppVersionProvider<SN extends string> {
   getQueries({ schemaName }: { schemaName: SN }) {
     return this._access[schemaName]
       ? [
-          `"""The version of the Buon application serving this API."""
+          `"""The version of the Ocop application serving this API."""
           ${this._appName}Version: String`,
         ]
       : [];
@@ -60,7 +60,7 @@ export class AppVersionProvider<SN extends string> {
 
 export function appVersionMiddleware(version: string) {
   return (req: Request, res: Response, next: NextFunction) => {
-    res.set("X-Buon-App-Version", version);
+    res.set("X-Ocop-App-Version", version);
     next();
   };
 }

@@ -12,7 +12,7 @@ describe("AppVersionProvider", () => {
     let schemaName = "public" as const;
     expect(appVersion.getTypes({ schemaName })).toEqual([]);
     expect(appVersion.getQueries({ schemaName })).toEqual([
-      `"""The version of the Buon application serving this API."""
+      `"""The version of the Ocop application serving this API."""
           appVersion: String`,
     ]);
     expect(appVersion.getMutations({ schemaName })).toEqual([]);
@@ -49,7 +49,7 @@ describe("AppVersionProvider", () => {
     let schemaName = "public" as const;
     expect(appVersion.getTypes({ schemaName })).toEqual([]);
     expect(appVersion.getQueries({ schemaName })).toEqual([
-      `"""The version of the Buon application serving this API."""
+      `"""The version of the Ocop application serving this API."""
           appVersion: String`,
     ]);
     expect(appVersion.getMutations({ schemaName })).toEqual([]);
@@ -83,7 +83,7 @@ describe("appVersionMiddleware", () => {
     const next = jest.fn() as NextFunction;
 
     middleware(req, res, next);
-    expect(res.set).toHaveBeenCalledWith("X-Buon-App-Version", "1.0.0");
+    expect(res.set).toHaveBeenCalledWith("X-Ocop-App-Version", "1.0.0");
     expect(next).toHaveBeenCalled();
   });
 });

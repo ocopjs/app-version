@@ -9,8 +9,8 @@ dependencies:
     specifier: ^7.14.6
     version: 7.23.9
   '@ocopjs/access-control':
-    specifier: ^1.0.1
-    version: 1.0.1
+    specifier: ^1.0.3
+    version: 1.0.3
   express:
     specifier: ^4.17.1
     version: 4.18.2
@@ -909,8 +909,8 @@ packages:
       fastq: 1.17.1
     dev: true
 
-  /@ocopjs/access-control@1.0.1:
-    resolution: {integrity: sha512-+T4Z6dIMqvmXG+f+JJPaZynTy4T8cJFbWk3zETJ5zRdLynl9BwNe1ndwwPQgdzcQ/JIZAEZ7HoShNF0nFoNDPQ==}
+  /@ocopjs/access-control@1.0.3:
+    resolution: {integrity: sha512-hcYVT9YWtvggREoxJdoO2nl0nut+UNiXavgQW0MXy//8fKfQCStY8CPNda0uizOAqvEC9zXixVTjWab31htlGg==}
     engines: {node: '16'}
     dependencies:
       '@ocopjs/utils': 1.0.5
