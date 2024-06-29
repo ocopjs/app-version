@@ -1,6 +1,6 @@
 {
   "name": "@ocopjs/app-version",
-  "description": "OcopJS - Trả về phiên bản hiện tại của ứng dụng.",
+  "description": "OcopJS - Trả về phiên bản hiện tại của ứng dụng. 🇻🇳",
   "version": "1.0.1",
   "author": "ocopjs",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "license": "Apache-2.0",
-  "homepage": "https://ocopee.com",
+  "homepage": "https://docs.ocopee.com/docs/ocopjs/references/app-version",
   "publishConfig": {
     "access": "public"
   },
